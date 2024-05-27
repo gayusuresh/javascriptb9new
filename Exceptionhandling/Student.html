@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+        var sid=1001;
+        var sname="anitha";
+        var m1=35,m2=35,m3=38,m4=39,m5=40;
+        var total=m1+m2+m3+m4+m5;
+        var percentage=(total*100/500.0)
+        document.write("The student id="+sid+"<br>")
+        document.write("The student name="+sname+"<br>")
+        document.write("The student total="+total+"<br>")
+        document.write("The student percentage="+percentage+"<br>")
+        if(percentage<40)
+        {
+            throw new Error("not Eligible for certificate")
+        }
+        else{
+            alert("welcome to placement pool")
+        }
+    }
+    catch(e)
+    {
+        alert(e);
+    }
+
+
+    </script>
+</body>
+</html>

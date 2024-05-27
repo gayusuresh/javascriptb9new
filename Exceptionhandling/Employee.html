@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function validate()
+{
+    try{
+var x=document.myform.eid.value;
+var y=document.myform.empname.value;
+var z=document.myform.exp.value;
+var sal=document.myform.salary.value;
+if(sal<70000)
+{
+ throw new Error("not eligible for the TaX")
+}
+else{
+   document.write("please pay ur tax properly")
+}
+
+    }
+    
+    catch(e)
+    {
+        alert(e);
+    }
+    finally{
+
+
+document.write("Employee id=:"+x+"<br>")
+    document.write("Employee name=:"+y+"<br>")
+    document.write("Employee exp=:"+z+"<br>")
+    document.write("Employee salary=:"+sal+"<br>")
+} 
+
+
+    
+}
+    </script>
+    <form action="#" name="myform" onsubmit="return validate()">
+        <label>EmployeeID</label>
+        <input type="text" name="eid" value=""><br>
+        <label>EmployeeName</label>
+        <input type="text" name="empname" value=""><br>
+        <label>Exp</label>
+        <input type="text" name="exp" value=""><br>
+        <label>salary</label>
+        <input type="text" name="salary" value=""><br>
+        <input type="submit" value="Login">
+
+    </form>
+</body>
+</html>

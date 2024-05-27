@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {
+         var name=document.myform.name.value;
+         var password=document.myform.password.value;
+         if(name==null || name=="")
+         {
+            alert("name cannot be blank")
+            return false;
+         }
+         else if(password.length<6)
+         {
+            alert("password must be atleast 6 characters");
+            return false;
+         }
+         return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" action="success.html" onsubmit=" return validate()">
+        <label>Name</label>
+        <input type="text" name="name" value=""><br>
+        <label>Password</label>
+        <input type="password" name="password" value="">
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+        }
+        /*descendant selector
+        div p{
+            background-color: rgb(216, 40, 40);
+        }*/
+        /* child selector
+        div >p{
+            background-color: rgb(63, 40, 216);
+        }*/
+        /*adjacent selector
+        h1+p{
+            background-color: rgb(216, 40, 137);
+
+        }*/
+
+        /*general selector*/
+        h1~p{
+            background-color: rgb(40, 216, 93);
+ 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is heading</h1>
+        <p>This is my paragraph</p>
+        <p>This is my paragraph</p>
+        <span><p>This is my paragraph</p></span>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   /* let arr=[1,2,3,4,5,6,7,8,9,10];
+    let sqr=arr.map((n)=>{
+        return n*n;
+    }
+)
+    
+    console.log(sqr)//1 ,4*/
+
+    let users=[{firstname:'gayathri',lastname:'mani',age:29,gender:'female',address:'banglore'},
+    {firstname:'suresh',lastname:'kumar',age:39,gender:'male',address:'chennai'},
+    {firstname:'hari',lastname:'mani',age:49,gender:'male',address:'CBE'}];
+    console.log(users)
+    let names=users.map((user)=>
+{
+    return user.firstname
+})
+console.log(names)
+
+let matureUser=users.filter((user)=>{
+    return user.age>35
+})
+console.log(matureUser)
+
+   </script> 
+</body>
+</html>

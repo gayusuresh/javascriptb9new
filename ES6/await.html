@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let reachA=new Promise((resolve,reject)=>{
+        const reached =true;
+        if(reached)
+        {
+            setTimeout(resolve,3000,"vidya reached");
+        }
+        else{
+            reject("vidya not reached")
+        }
+    })
+    
+        async function reachstaus()
+    {
+      console.log("Hi.......")
+      res=await reachA
+      console.log(res)
+      console.log("bye....................")
+    }
+    reachstaus();
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function stateChnage()
+        {
+            var state=new XMLHttpRequest();
+            state.onload=function()
+            {
+               document.getElementById('container').innerHTML=state.responseText;
+            }
+            state.open("GET","new.txt",true);
+            state.send();
+        }
+    </script>
+</head>
+<body>
+    <h3>Welcome</h3>
+   <div id="container">
+    <h1>Hey people</h1>
+  
+    <button type="button" onclick="stateChnage()">click</button>
+   </div> 
+</body>
+</html>

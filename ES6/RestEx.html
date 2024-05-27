@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(...arg)
+        {
+            let sum=0;
+
+            for(let i of arg)
+            {
+              sum=sum+i;//sum=0+2 sum=2+8=10 sum=10+9=19 sum=19+6=25
+            }
+            
+        return sum;
+        }
+        
+
+        console.log("The Sum =:"+sum(6,8,9))
+        console.log("The Sum =:"+sum(6,8))
+        console.log("The Sum =:"+sum(6,8,9,67))
+
+
+    </script>
+</body>
+</html>
